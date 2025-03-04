@@ -1,0 +1,30 @@
+object frm40202: Tfrm40202
+  Left = 350
+  Height = 511
+  Top = 250
+  Width = 879
+  Caption = 'Etiqueta 40x20'
+  ClientHeight = 511
+  ClientWidth = 879
+  object RLReport1: TRLReport
+    Left = 8
+    Height = 1123
+    Top = 8
+    Width = 794
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    object RLDetailGrid1: TRLDetailGrid
+      Left = 38
+      Height = 96
+      Top = 38
+      Width = 718
+      object RLLabel1: TRLLabel
+        Left = 108
+        Height = 16
+        Top = 22
+        Width = 58
+      end
+    end
+  end
+end

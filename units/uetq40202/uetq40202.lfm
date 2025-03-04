@@ -1,0 +1,74 @@
+object frmetq40202: Tfrmetq40202
+  Left = 403
+  Height = 502
+  Top = 250
+  Width = 811
+  Caption = 'Etiqueta 40*2 - 2 Colunas'
+  ClientHeight = 502
+  ClientWidth = 811
+  object RLReport1: TRLReport
+    Left = 8
+    Height = 1123
+    Top = 8
+    Width = 794
+    Background.AutoSize = False
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    PageSetup.ForceEmulation = True
+    RealBounds.UsedUnit = buMilimeters
+    BeforePrint = RLReport1BeforePrint
+    OnNeedData = RLReport1NeedData
+    object RLDetailGrid1: TRLDetailGrid
+      Left = 38
+      Height = 115
+      Top = 38
+      Width = 718
+      Background.Width = 10
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = False
+      ColCount = 2
+      BeforePrint = RLDetailGrid1BeforePrint
+      object RLLabel1: TRLLabel
+        Left = 24
+        Height = 15
+        Top = 0
+        Width = 107
+        Caption = 'NOME FANTASIA'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Arial Black'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object RLDescricao: TRLLabel
+        Left = 9
+        Height = 16
+        Top = 16
+        Width = 78
+      end
+      object Rlpreco: TRLLabel
+        Left = 9
+        Height = 16
+        Top = 32
+        Width = 78
+        AutoSize = False
+      end
+      object RLBarcode: TRLBarcode
+        Left = 11
+        Height = 34
+        Top = 56
+        Width = 73
+        Margins.LeftMargin = 1
+        Margins.RightMargin = 1
+        ShowText = boCode
+      end
+    end
+  end
+end
